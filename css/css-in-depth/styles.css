@@ -1,0 +1,35 @@
+/* 三个标签应用于同一个元素会发生什么? */
+
+/* 标签选择器(也称为类型选择器) */
+h1 {
+    font-family: serif; 
+}
+
+/* ID选择器 */
+#page-title {
+    font-family: sans-serif;
+}
+
+/* class选择器 */
+.title {
+    font-family: monospace;
+}
+
+/* 层叠规则决定了样式二被使用 */
+
+a:link {
+    color: blue;
+}
+
+.footer {
+    color: #666;
+    background-color: #ccc;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer a {
+    color: initial;
+    text-decoration: none;
+}

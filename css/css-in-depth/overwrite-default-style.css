@@ -1,0 +1,25 @@
+/* 覆写浏览器默认样式 */
+h1 {
+    color: #2f4f4f;
+    margin-bottom: 10px;
+}
+
+#main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0;
+}
+
+/* 让列表元素水平排列 */
+#main-nav li {
+    display: inline-block;
+}
+
+/* 把导航链接渲染成类似按钮的外观 */
+#main-nav a {
+    color: white;
+    background-color: #13a4a4;
+    padding: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+}

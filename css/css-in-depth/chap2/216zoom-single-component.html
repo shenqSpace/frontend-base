@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2-16 缩放单个组件</title>
+    <style>
+        :root {
+            font-size: calc(0.5em + 1vw);
+        }
+        .panel {
+            font-size: 1rem;
+            padding: 1em;
+            border: 1px solid #999;
+            border-radius: 0.5em;
+            margin-bottom: 1em;
+        }
+
+        .panel > h2 {
+            margin-top: 0;
+            font-size: 0.8em;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* 选择器之间不要有空格才能有复合选中的效果 */
+        .panel.large {
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <h2>Single-origin</h2>
+        <div class="panel-body">
+            The serene beauty of the sunset over the tranquil lake took my breath away. The colors in the sky blended together, creating a mesmerizing palette of oranges, pinks, and purples. As the sun dipped below the horizon, <a href="">hello</a>a sense of peace washed over me, and I felt completely at one with nature.
+        </div>
+    </div>
+    <div class="panel large">
+        <h2>Single-origin</h2>
+        <div class="panel-body">
+            The serene beauty of the sunset over the tranquil lake took my breath away. The colors in the sky blended together, creating a mesmerizing palette of oranges, pinks, and purples. As the sun dipped below the horizon, <a href="">hello</a>a sense of peace washed over me, and I felt completely at one with nature.
+        </div>
+    </div>
+</body>
+</html>

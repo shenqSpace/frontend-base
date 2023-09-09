@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>使用相对单位和一个继承字号创建面板</title>
+    <style>
+        /* 用em设置内边距和圆角,用px设置边框 */
+        .panel {
+            padding: 1em;
+            border-radius: 0.5em;
+            border: 1px solid #999;
+        }
+        /* 
+        1.将面板顶部多余空间移除
+        2.用rem设置标题字号
+        */
+        .panel > h2 {
+            margin-top: 0;      
+            font-size: 0.8 rem; 
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div class="panel">
+        <h2>hello</h2>
+        <div class="panel-body">
+            这是一个面板的主体,用来显示主要的内容,请点击<a href="">链接</a>来最大化
+        </div>
+    </div>
+</body>
+</html>
