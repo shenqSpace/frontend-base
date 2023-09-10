@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS表格实现等高列</title>
+    <style>
+        :root {
+            box-sizing: border-box;
+        }
+        * {
+            box-sizing: inherit;
+        }
+
+        body {
+            background-color: #eee;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+                color: #fff;
+                background-color: #0072b0;
+                border-radius: .5em;
+        }
+
+        .container {
+            display: table;
+            width: 100%;
+            border-spacing: 1.5em 0;
+        }
+
+        .main {
+            display: table-cell;
+            width: 70%;
+            background-color: #fff;
+            border-radius: .5em;
+        }
+
+        .sidebar {
+            display: table-cell;
+            width: 30%;
+            margin-left: 1.5em;
+            padding: 1.5em;
+            background-color: #fff;
+            border-radius: .5em;
+            
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>篮球俱乐部</h1>
+    </header>
+    <div class="container">
+        <main class="main">
+            <h2>欢迎加入我们</h2>
+            <p>这是一个和睦的大家庭</p>
+        </main>  
+        <aside class="sidebar">
+            <div class="widget"></div>
+            <div class="widget"></div>
+        </aside>
+    </div>
+</body>
+</html>
