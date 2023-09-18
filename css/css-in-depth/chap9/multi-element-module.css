@@ -1,0 +1,34 @@
+
+
+.media {
+    padding: 1.5em;
+    background-color: #eee;
+    border-radius: 0.5em;
+}
+
+.media--right > .media_image {
+    float: right;
+}
+
+/* 清除浮动 */
+.media::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.media_image {
+    width: 100px;
+    float: left;
+    margin-right: 1.5em;
+}
+
+.media_body {
+    overflow: auto;
+    margin-top: 0;
+}
+
+.media_body > h4 {
+    margin-top: 0;
+}
+
