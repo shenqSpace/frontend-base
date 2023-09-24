@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>规则集的声明冲突</title>
+    <style>
+
+        h1 {
+            color: red;
+        }
+
+        #page-title {
+            color: orange;
+        }
+        
+        .title {
+            color: yellow;
+            margin-bottom: 10px;
+        }
+
+        /* 删除用户代理的列表样式 */
+        #main-nav {
+            /* border: 1px solid black; */
+            margin-top: 10px;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        #main-nav li {
+            display: inline-block;
+        }
+
+        #main-nav a {
+            color: white;
+            background-color: #13a4a4;
+            padding: 5px;
+            border-radius: 2px;
+            text-decoration:none;
+        }
+
+        #main-nav .featured {
+            background-color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header class="class-header">
+        <h1 id="page-title" class="title">标题</h1>
+        <nav>
+            <ul id="main-nav" class="nav">
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="" class="featured">4</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
