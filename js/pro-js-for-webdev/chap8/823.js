@@ -12,7 +12,8 @@
  * 赋值为构造函数的prototype属性。
  * 这个函数作用域内保存了一个指向当前对象的this引用。
  * 这个构造函数默认返回新对象，也可以自己指定返回另外的非空对象。
- * 构造函数有一个默认的constructor属性，它指向构造函数本身，即obj.constructor === Person
+ * 新对象有一个默认的constructor属性，它指向构造函数本身，即obj.constructor === Person，这其实
+ * 是新对象继承了原型对象的constructor属性，Person.prototype.constructor
  * @param {*} name 
  * @param {*} age 
  * @param {*} job 
